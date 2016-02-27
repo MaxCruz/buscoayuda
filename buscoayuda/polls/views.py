@@ -43,21 +43,23 @@ def logout(request):
 
 def register(request):
     if request.method == 'POST':
-        user_form = UserForm(data=request.POST)
-        trabajador_form = TrabajadorForm(data=request.POST)
-        user = User()
+        username = request.POST.get('username')
+        password=request.POST.get('password')
+
+        user = User.objects.create_user(username=username, password=password)
         user.first_name = request.POST.get('nombre')
         user.last_name = request.POST.get('apellidos')
-        user.is_superuser = False
-        user.username = request.POST.get('username') + '3'
         user.email = request.POST.get('correo')
-        user.is_staff = False
-        user.is_active = True
-        user.date_joined = datetime.datetime.now()
         user.save()
-        user.set_password(request.POST.get('password'))
-        trabajador = trabajador_form.save(commit=False)
-        if trabajador.is_valid():
-            trabajador.user = user
-            trabajador.save()
+
+        nuevo_trabajador=Trabajador(nombre=request.POST['nombre'],
+                                      apellidos=request.POST['apellidos'],
+                                      aniosExperiencia=request.POST.get('aniosExperiencia'),
+                                      tiposDeServicio=TiposDeServicio.objects.get(pk=request.POST.get('tiposDeServicio')),
+                                      telefono=request.POST.get('telefono'),
+                                      correo=request.POST.get('correo'),
+                                      imagen=request.POST.get('imagen'),
+                                      usuarioId=user);
+        nuevo_trabajador.save()
+
     return HttpResponseRedirect('/')

@@ -66,15 +66,6 @@ class TrabajadorForm(ModelForm):
 
 
 class UserForm(ModelForm):
-    username = forms.CharField(
-        widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Ingrese sus nombre de usuario'})
-    )
-    password = forms.CharField(
-        widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Ingrese su contraseña'})
-    )
-    confirmar = forms.CharField(
-        widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Confirme su contraseña'})
-    )
     class Meta:
         model = User
         fields = ['username', 'password']
