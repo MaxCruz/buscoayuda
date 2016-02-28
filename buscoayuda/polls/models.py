@@ -35,9 +35,9 @@ class TrabajadorForm(ModelForm):
     nombre = forms.CharField(
         widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Ingrese sus nombres'})
     )
-    apellidos = forms.CharField\
-        (widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Ingrese sus apellidos'})
-     )
+    apellidos = forms.CharField(
+        widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Ingrese sus apellidos'})
+    )
     aniosExperiencia = forms.IntegerField(
         widget=forms.NumberInput(attrs={'class': 'form-control', 'placeholder': 'Cantidad de años de experiencia'}),
         label='Años De Experiencia'
@@ -66,6 +66,15 @@ class TrabajadorForm(ModelForm):
 
 
 class UserForm(ModelForm):
+    username = forms.CharField(
+        widget=forms.TextInput(attrs={'class': 'form-control'}),
+        label='Usuario'
+    )
+    password = forms.CharField(
+        widget=forms.PasswordInput(attrs={'class': 'form-control'}),
+        label='Contraseña'
+    )
+
     class Meta:
         model = User
         fields = ['username', 'password']

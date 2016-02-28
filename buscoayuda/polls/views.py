@@ -4,10 +4,12 @@ import datetime
 import boto
 from django.conf import settings
 from django.contrib.auth.models import User
-from django.http import HttpResponseRedirect
+from django.core import serializers
+from django.http import HttpResponseRedirect, HttpResponse
+
 from .models import Trabajador, TrabajadorForm, UserForm
 from .models import TiposDeServicio
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.contrib import auth
 
@@ -63,3 +65,12 @@ def register(request):
         nuevo_trabajador.save()
 
     return HttpResponseRedirect('/')
+
+
+def detalle_trabajador(request):
+    return render(request, "polls/detalle.html")
+
+
+def detail(request, pk):
+    trabajador = get_object_or_404(Trabajador, pk=pk)
+    return HttpResponse(serializers.serialize("json", [trabajador]))
