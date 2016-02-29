@@ -22,6 +22,8 @@
             text-align: right;
             width: 100%;
         }
+
+
     </style>
 </head>
 <body>
@@ -54,7 +56,7 @@
 {% if not user.is_authenticated %}
     <form class="navbar-form navbar-right" role="search">
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="Buscar" name="srch-term" id="srch-term">
+            <input  type="text" class="form-control" placeholder="Buscar" name="srch-term" id="buscar">
             <div class="input-group-btn">
                 <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
             </div>
@@ -62,6 +64,7 @@
     </form>
     <div class="col-lg-12">
     </div>
+    <div id="trabajadores">
     {% for trabajador in trabajadores %}
         <div class="col-sm-4 col-md-3">
             <div class="panel panel-default">
@@ -82,6 +85,7 @@
             </div>
         </div>
     {% endfor %}
+    </div>
 {% else %}
     <div class="container" style="padding: 5px">
         {% if user.is_authenticated and user.is_superuser %}
@@ -110,7 +114,49 @@
         $('.float-message').fadeTo(2000, 500).slideUp(500, function(){
             $('#success-alert').alert('close');
         });
+
+        $("#buscar").keyup(function(){
+            $('#trabajadores').clear;
+            mostrarTrabajadores();
+});
     });
+    function detalle(id){
+            localStorage.setItem('trabajador', id);
+            window.location = "/detail";
+}
+
+    function mostrarTrabajadores(){
+
+        $.getJSON("/mostrarTrabajadores/" + $("#buscar").val()).done(function (data) {
+            $('#trabajadores').empty();
+                $.each(data, function (key, val) {
+                    $.get( "/tipoServicio/"+val.fields.tiposDeServicio, function( dataTipo ) {
+                        dataTipo=jQuery.parseJSON(dataTipo);
+                      var tipo=dataTipo[0].fields.nombre;
+                      var imagenTipo= dataTipo[0].fields.imagen;
+
+
+                    var div='<div class="col-sm-4 col-md-3">'+
+                            '<div class="panel panel-default">'+
+                                '<div class="panel-heading" style="text-align: center; background-color: black;">'+
+                                    '<span style="color: white; font-size: large;">'+tipo+'</span>'+
+                                    '<img src="'+imagenTipo+'" />'+
+                                '</div>'+
+                                '<div class="panel-body" style="text-align: center">'+
+                                    '<a onclick="detalle('+val.pk+')" class="trabajador" href="#" data-form="'+val.fields.id+'" style="text-decoration: none;">'+
+                                        '<img class="thumbnail img-responsive center-block"'+
+                                             'src="'+val.fields.imagen+'" width="300"'+
+                                             'height="300">'+
+                                        '<span>'+val.fields.nombre+' '+val.fields.apellidos+'</span>'+
+                                    '</a>'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>';
+                        $('#trabajadores').append(div);
+                    });
+                })
+            });
+    }
 </script>
 </body>
 </html>

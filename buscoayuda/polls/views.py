@@ -6,8 +6,9 @@ from django.conf import settings
 from django.contrib.auth.models import User
 from django.core import serializers
 from django.http import HttpResponseRedirect, HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 
-from .models import Trabajador, TrabajadorForm, UserForm
+from .models import Trabajador, TrabajadorForm, UserForm, Comentario
 from .models import TiposDeServicio
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
@@ -61,11 +62,39 @@ def register(request):
                                       telefono=request.POST.get('telefono'),
                                       correo=request.POST.get('correo'),
                                       imagen=request.POST.get('imagen'),
-                                      usuarioId=user);
+                                      usuarioId=user)
         nuevo_trabajador.save()
 
     return HttpResponseRedirect('/')
 
+@csrf_exempt
+def add_comment(request):
+    if request.method == 'POST':
+       new_comment = Comentario(texto=request.POST['texto'],
+                                      trabajador=Trabajador.objects.get(pk=request.POST.get('trabajador')),
+                                      correo=request.POST['correo'])
+       new_comment.save()
+    return HttpResponse(serializers.serialize("json", [new_comment]))
+
+@csrf_exempt
+def mostrarTrabajadores(request, tipo=""):
+    if tipo == "":
+      lista_trabajadores = Trabajador.objects.all()
+    else:
+      lista_trabajadores = Trabajador.objects.select_related().filter(tiposDeServicio__nombre__icontains=tipo)
+
+
+    return HttpResponse(serializers.serialize("json", lista_trabajadores))
+
+@csrf_exempt
+def mostrarComentarios(request, idTrabajador):
+    lista_comentarios =Comentario.objects.filter(trabajador=Trabajador.objects.get(pk=idTrabajador))
+
+    return HttpResponse(serializers.serialize("json", lista_comentarios))
+
+def getTiposDeServicio(request, pk):
+    tipo = TiposDeServicio.objects.get(pk=pk)
+    return HttpResponse(serializers.serialize("json", [tipo]))
 
 def detalle_trabajador(request):
     return render(request, "polls/detalle.html")
