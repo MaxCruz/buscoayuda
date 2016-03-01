@@ -57,10 +57,7 @@ class TrabajadorForm(ModelForm):
         widget=forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'Correo electrónico'}),
         label='Correo'
     )
-    imagen = forms.FileField(
-        widget=forms.FileInput(attrs={'class': 'form-control'}),
-        label='Fotografía'
-    )
+
     class Meta:
         model = Trabajador
         fields = ['nombre', 'apellidos', 'aniosExperiencia', 'tiposDeServicio', 'telefono', 'correo', 'imagen']
