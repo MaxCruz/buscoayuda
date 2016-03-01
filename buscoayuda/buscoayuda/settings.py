@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'a'
+SECRET_KEY = ENV['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -28,9 +28,9 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 # AWS S3 Credentials
-AWS_ACCESS_KEY_ID = 'a'
-AWS_SECRET_ACCESS_KEY = 'a'
-AWS_STORAGE_BUCKET_NAME = 'a'
+AWS_ACCESS_KEY_ID = ENV['AWS_ACCESS_KEY_ID']
+AWS_SECRET_ACCESS_KEY = ENV['AWS_SECRET_ACCESS_KEY']
+AWS_STORAGE_BUCKET_NAME = ENV['AWS_STORAGE_BUCKET_NAME']
 
 # Tell django-storages that when coming up with the URL for an item in S3 storage, keep
 # it simple - just use this domain plus the path. (If this isn't set, things get complicated).
@@ -97,12 +97,12 @@ WSGI_APPLICATION = 'buscoayuda.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'BuscoAyuda',
-        'USER': 'postgres',
-        'PASSWORD': 'nacional',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': ENV['DATABASES_ENGINE'],
+        'NAME': ENV['DATABASES_NAME'],
+        'USER': ENV['DATABASES_USER'],
+        'PASSWORD': ENV['DATABASES_PASSWORD'],
+        'HOST': ENV['DATABASES_HOST'],
+        'PORT': ENV['DATABASES_PORT']
     }
 }
 
@@ -143,4 +143,4 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'

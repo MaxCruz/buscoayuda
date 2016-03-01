@@ -133,8 +133,8 @@
                     $.get( "/tipoServicio/"+val.fields.tiposDeServicio, function( dataTipo ) {
                         dataTipo=jQuery.parseJSON(dataTipo);
                       var tipo=dataTipo[0].fields.nombre;
-                      var imagenTipo= dataTipo[0].fields.imagen;
-
+                      //var imagenTipo= base_url + dataTipo[0].fields.imagen;
+                      var imagenTipo="https://miso4202.s3.amazonaws.com/services/ic_local_florist_white_48dp_1x.png";
 
                     var div='<div class="col-sm-4 col-md-3">'+
                             '<div class="panel panel-default">'+

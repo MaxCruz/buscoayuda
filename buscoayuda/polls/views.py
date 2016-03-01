@@ -20,8 +20,9 @@ def index(request):
     tipos_de_servicios = TiposDeServicio.objects.all()
     form_trabajador = TrabajadorForm(request.POST)
     form_usuario = UserForm(request.POST)
+
     context = {'trabajadores': trabajadores, 'tipos_de_servicios': tipos_de_servicios,
-               'form_trabajador': form_trabajador, 'form_usuario': form_usuario}
+               'form_trabajador': form_trabajador, 'form_usuario': form_usuario, 'base_url': settings.STATIC_URL}
     return render(request, 'polls/index.html', context)
 
 
