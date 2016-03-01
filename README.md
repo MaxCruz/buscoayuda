@@ -1,3 +1,0 @@
-# buscoayuda
-
-Django Project
