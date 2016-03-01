@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'af4)585_aqx(wnoszrl*b@ok8d3k03f+-fzznzt_7nz-t-3ile'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -29,9 +29,9 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 # AWS S3 Credentials
-AWS_ACCESS_KEY_ID = 'AKIAIIIXW4YFCQUAT5UA'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'miso4202'
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
 
 # Tell django-storages that when coming up with the URL for an item in S3 storage, keep
 # it simple - just use this domain plus the path. (If this isn't set, things get complicated).
@@ -98,12 +98,12 @@ WSGI_APPLICATION = 'buscoayuda.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'buscoayuda',
-        'USER': 'postgres',
-        'PASSWORD': 'izote',
-        'HOST': '127.0.0.1',
-        'PORT': '5432'
+        'ENGINE': os.environ.get('DB_ENGINE'),
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST'),
+        'PORT': os.environ.get('DB_PORT')
     }
 }
 
