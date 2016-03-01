@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2457c3ea-39fd-4576-8a80-39398ea58240" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/buscoayuda/polls/templates/polls/editar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buscoayuda/polls/models.py" afterPath="$PROJECT_DIR$/buscoayuda/polls/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buscoayuda/polls/templates/polls/detalle.html" afterPath="$PROJECT_DIR$/buscoayuda/polls/templates/polls/detalle.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buscoayuda/buscoayuda/urls.py" afterPath="$PROJECT_DIR$/buscoayuda/buscoayuda/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buscoayuda/polls/templates/polls/index.html" afterPath="$PROJECT_DIR$/buscoayuda/polls/templates/polls/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buscoayuda/polls/urls.py" afterPath="$PROJECT_DIR$/buscoayuda/polls/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buscoayuda/polls/views.py" afterPath="$PROJECT_DIR$/buscoayuda/polls/views.py" />
@@ -29,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59090906">
-              <caret line="145" column="65" selection-start-line="145" selection-start-column="65" selection-end-line="145" selection-end-column="65" />
+            <state vertical-scroll-proportion="-3.2692308">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -42,28 +42,38 @@
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1456729648621" expanded="true" signature="5717:6066" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5717:6067" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5717:6108" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5717:6109" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5717:6196" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5717:6357" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5717:6359" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5717:6451" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5717:6452" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5717:6539" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5717:6540" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5717:6601" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5717:6603" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5717:6705" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5717:6749" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5782:6066" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5853:5897" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5898:6066" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="5952:5983" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="6177:6195" placeholder="..." />
-                <marker date="1456729648621" expanded="true" signature="6335:6357" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5822:6171" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5822:6172" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5822:6213" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5822:6214" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5822:6301" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5822:6462" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5822:6464" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5822:6556" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5822:6557" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5822:6644" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5822:6645" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5822:6706" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5822:6708" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5822:6810" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5822:6854" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5887:6171" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="5958:6002" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="6003:6171" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="6057:6088" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="6282:6300" placeholder="..." />
+                <marker date="1456806576614" expanded="true" signature="6440:6462" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/buscoayuda/buscoayuda/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="56" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -71,8 +81,8 @@
       <file leaf-file-name="detalle.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/detalle.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.615385">
-              <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="48" />
+            <state vertical-scroll-proportion="-3.9230769">
+              <caret line="52" column="42" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -89,10 +99,30 @@
         <entry file="file://$PROJECT_DIR$/buscoayuda/polls/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+              <caret line="63" column="64" selection-start-line="63" selection-start-column="64" selection-end-line="63" selection-end-column="64" />
               <folding>
                 <element signature="e#15#30#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/buscoayuda/buscoayuda/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9207459">
+              <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/editar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.230769">
+              <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,32 +139,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/buscoayuda/buscoayuda/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/buscoayuda/polls/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="registro.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/registro.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693">
+            <state vertical-scroll-proportion="0.0">
               <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#button#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -147,7 +155,7 @@
         <entry file="file://$PROJECT_DIR$/buscoayuda/polls/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+              <caret line="6" column="76" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -169,16 +177,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/buscoayuda/buscoayuda/urls.py" />
         <option value="$PROJECT_DIR$/buscoayuda/polls/admin.py" />
         <option value="$PROJECT_DIR$/buscoayuda/polls/templates/polls/login.html" />
-        <option value="$PROJECT_DIR$/buscoayuda/buscoayuda/settings.py" />
         <option value="$PROJECT_DIR$/buscoayuda/polls/templates/polls/registro.html" />
         <option value="$PROJECT_DIR$/buscoayuda/polls/models.py" />
         <option value="$PROJECT_DIR$/buscoayuda/polls/templates/polls/detalle.html" />
+        <option value="$PROJECT_DIR$/buscoayuda/buscoayuda/urls.py" />
         <option value="$PROJECT_DIR$/buscoayuda/polls/urls.py" />
-        <option value="$PROJECT_DIR$/buscoayuda/polls/views.py" />
+        <option value="$PROJECT_DIR$/buscoayuda/polls/templates/polls/editar.html" />
         <option value="$PROJECT_DIR$/buscoayuda/polls/templates/polls/index.html" />
+        <option value="$PROJECT_DIR$/buscoayuda/polls/views.py" />
+        <option value="$PROJECT_DIR$/buscoayuda/buscoayuda/settings.py" />
       </list>
     </option>
   </component>
@@ -218,7 +227,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -316,6 +324,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -567,14 +576,20 @@
       <option name="project" value="LOCAL" />
       <updated>1456597013910</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Agregar comentarios y busqueda rest">
+      <created>1456729762374</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1456729762374</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23524962" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24281392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -608,7 +623,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se arregla registro de trabaajdores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se arregla registro de trabaajdores" />
+    <MESSAGE value="Agregar comentarios y busqueda rest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agregar comentarios y busqueda rest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -617,6 +633,217 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="63" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1456806576614" expanded="true" signature="5822:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6172" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6213" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6214" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6301" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6462" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6464" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6556" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6557" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6644" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6645" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6706" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6708" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6810" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6854" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5887:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5958:6002" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6003:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6057:6088" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6282:6300" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6440:6462" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/buscoayuda/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="56" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/detalle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1456720873712" expanded="true" signature="1123:1150" placeholder="..." />
+            <marker date="1456720873712" expanded="true" signature="1803:1851" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/editar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="10" />
+          <folding>
+            <element signature="e#15#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/registro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#button#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1456806576614" expanded="true" signature="5822:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6172" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6213" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6214" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6301" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6462" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6464" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6556" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6557" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6644" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6645" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6706" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6708" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6810" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6854" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5887:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5958:6002" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6003:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6057:6088" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6282:6300" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6440:6462" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/detalle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1456720873712" expanded="true" signature="1123:1150" placeholder="..." />
+            <marker date="1456720873712" expanded="true" signature="1803:1851" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="10" />
+          <folding>
+            <element signature="e#15#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/buscoayuda/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/registro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#button#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -629,27 +856,27 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1456729648621" expanded="true" signature="5717:6066" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6067" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6108" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6109" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6196" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6357" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6359" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6451" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6452" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6539" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6540" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6601" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6603" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6705" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6749" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5782:6066" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5853:5897" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5898:6066" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5952:5983" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="6177:6195" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="6335:6357" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6172" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6213" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6214" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6301" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6462" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6464" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6556" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6557" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6644" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6645" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6706" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6708" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6810" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6854" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5887:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5958:6002" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6003:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6057:6088" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6282:6300" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6440:6462" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -686,9 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -722,27 +946,27 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1456729648621" expanded="true" signature="5717:6066" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6067" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6108" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6109" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6196" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6357" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6359" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6451" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6452" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6539" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6540" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6601" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6603" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6705" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6749" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5782:6066" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5853:5897" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5898:6066" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5952:5983" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="6177:6195" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="6335:6357" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6172" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6213" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6214" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6301" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6462" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6464" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6556" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6557" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6644" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6645" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6706" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6708" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6810" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6854" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5887:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5958:6002" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6003:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6057:6088" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6282:6300" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6440:6462" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -779,9 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -815,27 +1036,27 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1456729648621" expanded="true" signature="5717:6066" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6067" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6108" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6109" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6196" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6357" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6359" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6451" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6452" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6539" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6540" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6601" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6603" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6705" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6749" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5782:6066" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5853:5897" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5898:6066" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5952:5983" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="6177:6195" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="6335:6357" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6172" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6213" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6214" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6301" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6462" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6464" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6556" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6557" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6644" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6645" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6706" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6708" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6810" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6854" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5887:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5958:6002" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6003:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6057:6088" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6282:6300" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6440:6462" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -872,9 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -907,26 +1125,101 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/buscoayuda/buscoayuda/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/registro.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693">
+        <state vertical-scroll-proportion="0.0">
           <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#button#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="76" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/detalle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="52" column="42" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1456720873712" expanded="true" signature="1123:1150" placeholder="..." />
+            <marker date="1456720873712" expanded="true" signature="1803:1851" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/buscoayuda/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="56" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/editar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1456806576614" expanded="true" signature="5822:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6172" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6213" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6214" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6301" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6462" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6464" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6556" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6557" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6644" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6645" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6706" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6708" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6810" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5822:6854" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5887:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="5958:6002" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6003:6171" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6057:6088" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6282:6300" placeholder="..." />
+            <marker date="1456806576614" expanded="true" signature="6440:6462" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="64" selection-start-line="63" selection-start-column="64" selection-end-line="63" selection-end-column="64" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -941,81 +1234,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/buscoayuda/buscoayuda/urls.py">
+    <entry file="file://$PROJECT_DIR$/buscoayuda/buscoayuda/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23776224">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.9207459">
+          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
-          <folding>
-            <element signature="e#15#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/detalle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.615385">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1456720873712" expanded="true" signature="1123:1150" placeholder="..." />
-            <marker date="1456720873712" expanded="true" signature="1803:1851" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/buscoayuda/polls/templates/polls/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59090906">
-          <caret line="145" column="65" selection-start-line="145" selection-start-column="65" selection-end-line="145" selection-end-column="65" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1456729648621" expanded="true" signature="5717:6066" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6067" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6108" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6109" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6196" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6357" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6359" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6451" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6452" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6539" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6540" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6601" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6603" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6705" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5717:6749" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5782:6066" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5853:5897" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5898:6066" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="5952:5983" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="6177:6195" placeholder="..." />
-            <marker date="1456729648621" expanded="true" signature="6335:6357" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>

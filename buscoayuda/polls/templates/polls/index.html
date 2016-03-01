@@ -29,8 +29,9 @@
 <body>
 <ul class="nav navbar-nav navbar-right" style="padding-right: 20px">
     {% if user.is_authenticated %}
-        <li>
-            <!--suppress HtmlUnknownTarget -->
+
+            <li><a href="{% url 'principal:editar' idTrabajador=user.id %}" id="id_editar"><span class="glyphicon glyphicon-user"></span> Editar</a></li>
+    <li>
             <a href="logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
         </li>
     {% else %}
@@ -106,6 +107,7 @@
         $('#id_register').click(function () {
             $('#register_modal').modal();
         });
+
         $('.trabajador').click(function () {
             var trabajador = $(this).data("form");
             localStorage.setItem('trabajador', trabajador);

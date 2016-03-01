@@ -61,11 +61,29 @@ def register(request):
                                       tiposDeServicio=TiposDeServicio.objects.get(pk=request.POST.get('tiposDeServicio')),
                                       telefono=request.POST.get('telefono'),
                                       correo=request.POST.get('correo'),
-                                      imagen=request.POST.get('imagen'),
+                                      imagen=settings.STATIC_URL+request.POST.get('imagen'),
                                       usuarioId=user)
         nuevo_trabajador.save()
 
     return HttpResponseRedirect('/')
+
+def editar_perfil(request,idTrabajador):
+    trabajador=Trabajador.objects.get(usuarioId=idTrabajador)
+    if request.method == 'POST':
+        # formulario enviado
+        form_trabajador = TrabajadorForm(request.POST, instance=trabajador)
+
+        if form_trabajador.is_valid():
+            # formulario validado correctamente
+            form_trabajador.save()
+            return HttpResponseRedirect('/')
+
+    else:
+        # formulario inicial
+        form_trabajador = TrabajadorForm(instance=trabajador)
+
+    context = {'form_trabajador': form_trabajador}
+    return render(request, 'polls/editar.html', context)
 
 @csrf_exempt
 def add_comment(request):
