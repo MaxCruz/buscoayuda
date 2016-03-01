@@ -31,9 +31,20 @@ AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
 AWS_PRELOAD_METADATA = True
+AWS_QUERYSTRING_AUTH = False
+
+# Expires 20 years in the future at 8PM GMT
+#tenyrs = date.today() + timedelta(days=365*10)
+#AWS_HEADERS = {
+	#'Expires': tenyrs.strftime('%a, %d %b %Y 20:00:00 GMT')
+#}
+
+STATICFILES_STORAGE = 's3_folder_storage.s3.StaticStorage'
+STATIC_URL = 'http://%s.s3.amazonaws.com/static/' % AWS_STORAGE_BUCKET_NAME
+STATIC_S3_PATH = 'static/'
 
 # S3 Storage base
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+#AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 
 # This is used by the `static` template tag from `static`
 #STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, 'static')
@@ -54,7 +65,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap3',
-    'storages'
+    'storages',
+    's3_folder_storage'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -142,13 +154,13 @@ ALLOWED_HOSTS = ['*']
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
-STATICFILES_DIRS = [
-    os.path.join(PROJECT_ROOT, 'static'),
-]
+#STATICFILES_DIRS = [
+    #os.path.join(PROJECT_ROOT, 'static'),
+#]
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+#STiATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
