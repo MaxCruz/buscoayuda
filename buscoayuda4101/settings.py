@@ -35,7 +35,7 @@ AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 
 # This is used by the `static` template tag from `static`
-STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
+STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, 'static')
 
 # Tell the staticfiles app to use S3Boto storage when writing the collected static files (when you run `collectstatic`).
 STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
@@ -141,6 +141,7 @@ ALLOWED_HOSTS = ['*']
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 #STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+STATIC_ROOT = os.path.join(PROJECT_ROOT, "..", "www", "static")
 #STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
