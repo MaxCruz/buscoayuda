@@ -91,9 +91,9 @@ def editar_perfil(request,idTrabajador):
 @csrf_exempt
 def add_comment(request):
     if request.method == 'POST':
-       new_comment = Comentario(texto=request.POST['texto'],
+       new_comment = Comentario(texto=request.POST.get('texto'),
                                       trabajador=Trabajador.objects.get(pk=request.POST.get('trabajador')),
-                                      correo=request.POST['correo'])
+                                      correo=request.POST.get('correo'))
        new_comment.save()
     return HttpResponse(serializers.serialize("json", [new_comment]))
 
