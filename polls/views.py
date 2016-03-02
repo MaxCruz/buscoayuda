@@ -48,7 +48,7 @@ def logout(request):
 def register(request):
     if request.method == 'POST':
         username = request.POST.get('username')
-        password=request.POST.get('password')
+        password = request.POST.get('password')
 
         user = User.objects.create_user(username=username, password=password)
         user.first_name = request.POST.get('nombre')
@@ -56,13 +56,15 @@ def register(request):
         user.email = request.POST.get('correo')
         user.save()
 
+
+
         nuevo_trabajador=Trabajador(nombre=request.POST['nombre'],
                                       apellidos=request.POST['apellidos'],
                                       aniosExperiencia=request.POST.get('aniosExperiencia'),
                                       tiposDeServicio=TiposDeServicio.objects.get(pk=request.POST.get('tiposDeServicio')),
                                       telefono=request.POST.get('telefono'),
                                       correo=request.POST.get('correo'),
-                                      imagen=settings.STATIC_URL+request.POST.get('imagen'),
+                                      imagen=request.FILES['imagen'],
                                       usuarioId=user)
         nuevo_trabajador.save()
 
@@ -72,7 +74,7 @@ def editar_perfil(request,idTrabajador):
     trabajador=Trabajador.objects.get(usuarioId=idTrabajador)
     if request.method == 'POST':
         # formulario enviado
-        form_trabajador = TrabajadorForm(request.POST, instance=trabajador)
+        form_trabajador = TrabajadorForm(request.POST, request.FILES, instance=trabajador)
 
         if form_trabajador.is_valid():
             # formulario validado correctamente
