@@ -63,6 +63,6 @@ class FunctionalTest(TestCase):
         span=self.browser.find_element(By.XPATH, '//span[text()="Max Cruz"]')
         span.click()
 
-        h2=self.browser.find_element(By.XPATH, '//h1[text()="Max Cruz"]')
+        h2=self.browser.find_element(By.XPATH, '//h2[text()="Max Cruz"]')
 
         self.assertIn('Max Cruz', h2.text)
