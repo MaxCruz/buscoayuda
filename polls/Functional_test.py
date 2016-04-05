@@ -164,3 +164,13 @@ class FunctionalTest(TestCase):
         h4=self.browser.find_element(By.XPATH, '//h4[text()="prueba@prueba.com"]')
 
         self.assertIn('prueba@prueba.com', h4.text)
+
+    def test_buscarIndependiente(self):
+        self.browser.get('http://localhost:8000')
+
+        buscar = self.browser.find_element_by_id('buscar')
+        buscar.send_keys('Raul Rodriguez')
+
+        span=self.browser.find_element(By.XPATH, '//span[text()="Max Raul Cruz Rodriguez"]')
+
+        self.assertIn('Max Raul Cruz Rodriguez', span.text)
