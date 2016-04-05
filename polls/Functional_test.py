@@ -21,6 +21,7 @@ class FunctionalTest(TestCase):
         self.browser.get('http://localhost:8000')
         link = self.browser.find_element_by_id('id_register')
         link.click()
+        self.browser.implicitly_wait(3)
 
         nombre = self.browser.find_element_by_id('id_nombre')
         nombre.send_keys('Max')
@@ -43,7 +44,7 @@ class FunctionalTest(TestCase):
         imagen.send_keys('/Users/max/Pictures/Wallpapers/pi_2-1440x900.jpg')
 
         nombreUsuario = self.browser.find_element_by_id('id_username')
-        nombreUsuario.send_keys('max')
+        nombreUsuario.send_keys('max_test')
 
         clave = self.browser.find_element_by_id('id_password')
         clave.send_keys('clave123')
