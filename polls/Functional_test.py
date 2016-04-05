@@ -41,7 +41,7 @@ class FunctionalTest(TestCase):
         correo.send_keys('mr.cruz@uniandes.edu.co')
 
         imagen = self.browser.find_element_by_id('id_imagen')
-        imagen.send_keys('/Users/max/Pictures/Wallpapers/pi_2-1440x900.jpg')
+        imagen.send_keys('/Users/max/Downloads/profile.png')
 
         nombreUsuario = self.browser.find_element_by_id('id_username')
         nombreUsuario.send_keys('max_test')
@@ -56,3 +56,13 @@ class FunctionalTest(TestCase):
         span=self.browser.find_element(By.XPATH, '//span[text()="Max Cruz"]')
 
         self.assertIn('Max Cruz', span.text)
+
+
+    def test_verDetalle(self):
+        self.browser.get('http://localhost:8000')
+        span=self.browser.find_element(By.XPATH, '//span[text()="Max Cruz"]')
+        span.click()
+
+        h2=self.browser.find_element(By.XPATH, '//h1[text()="Max Cruz"]')
+
+        self.assertIn('Max Cruz', h2.text)
