@@ -20,7 +20,7 @@
     <SUITE FILE_PATH="coverage/buscoayuda4101$Unittests_in_Functional_test.coverage" NAME="Unittests in Functional_test Coverage Results" MODIFIED="1459828990455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/polls" />
     <SUITE FILE_PATH="coverage/buscoayuda4101$Unittest_FunctionalTest_test_loginIndependiente.coverage" NAME="Unittest FunctionalTest.test_loginIndependiente Coverage Results" MODIFIED="1459829383546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/polls" />
     <SUITE FILE_PATH="coverage/buscoayuda4101$Unittest_FunctionalTest_test_comentar.coverage" NAME="Unittest FunctionalTest.test_comentar Coverage Results" MODIFIED="1459833876539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/polls" />
-    <SUITE FILE_PATH="coverage/buscoayuda4101$Unittest_FunctionalTest_test_buscarIndependiente.coverage" NAME="Unittest FunctionalTest.test_buscarIndependiente Coverage Results" MODIFIED="1459834295182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/polls" />
+    <SUITE FILE_PATH="coverage/buscoayuda4101$Unittest_FunctionalTest_test_buscarIndependiente.coverage" NAME="Unittest FunctionalTest.test_buscarIndependiente Coverage Results" MODIFIED="1459834394179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/polls" />
     <SUITE FILE_PATH="coverage/buscoayuda4101$Unittest_FunctionalTest_test_editIndependiente.coverage" NAME="Unittest FunctionalTest.test_editIndependiente Coverage Results" MODIFIED="1459832302388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/polls" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -38,8 +38,8 @@
       <file leaf-file-name="Functional_test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/polls/Functional_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6896552">
-              <caret line="167" column="28" selection-start-line="167" selection-start-column="28" selection-end-line="167" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.19827586">
+              <caret line="148" column="28" selection-start-line="148" selection-start-column="28" selection-end-line="148" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -745,7 +745,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459834264568</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Paso 7 - Buscar un independiente (Rojo)">
+      <created>1459834341539</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1459834341539</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -755,14 +761,14 @@
     <history-entry file="Unittest_FunctionalTest_test_buscarIndependiente - 2016.04.05 at 00h 31m 42s.xml">
       <configuration name="Unittest FunctionalTest.test_buscarIndependiente" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittest_FunctionalTest_test_buscarIndependiente - 2016.04.05 at 00h 32m 55s.xml">
+      <configuration name="Unittest FunctionalTest.test_buscarIndependiente" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_FunctionalTest_test_buscarIndependiente - 2016.04.05 at 00h 33m 21s.xml">
+      <configuration name="Unittest FunctionalTest.test_buscarIndependiente" configurationId="tests" />
+    </history-entry>
     <history-entry file="Unittest_FunctionalTest_test_comentar - 2016.04.05 at 00h 24m 45s.xml">
       <configuration name="Unittest FunctionalTest.test_comentar" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_FunctionalTest_test_editIndependiente - 2016.04.04 at 23h 23m 16s.xml">
-      <configuration name="Unittest FunctionalTest.test_editIndependiente" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_FunctionalTest_test_editIndependiente - 2016.04.04 at 23h 25m 07s.xml">
-      <configuration name="Unittest FunctionalTest.test_editIndependiente" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittest_FunctionalTest_test_editIndependiente - 2016.04.04 at 23h 29m 11s.xml">
       <configuration name="Unittest FunctionalTest.test_editIndependiente" configurationId="tests" />
@@ -829,7 +835,8 @@
     <MESSAGE value="Paso 5 - Editar un independiente (Verde)" />
     <MESSAGE value="Paso 6 - Ingresar un comentario (Rojo)" />
     <MESSAGE value="Paso 6 - Ingresar un comentario (Verde)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Paso 6 - Ingresar un comentario (Verde)" />
+    <MESSAGE value="Paso 7 - Buscar un independiente (Rojo)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Paso 7 - Buscar un independiente (Rojo)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1152,8 +1159,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/polls/Functional_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6896552">
-          <caret line="167" column="28" selection-start-line="167" selection-start-column="28" selection-end-line="167" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.19827586">
+          <caret line="148" column="28" selection-start-line="148" selection-start-column="28" selection-end-line="148" selection-end-column="28" />
           <folding />
         </state>
       </provider>

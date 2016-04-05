@@ -170,6 +170,7 @@ class FunctionalTest(TestCase):
 
         buscar = self.browser.find_element_by_id('buscar')
         buscar.send_keys('Raul Rodriguez')
+        self.browser.implicitly_wait(3)
 
         span=self.browser.find_element(By.XPATH, '//span[text()="Max Raul Cruz Rodriguez"]')
 
