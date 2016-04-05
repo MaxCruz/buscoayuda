@@ -29,7 +29,7 @@ class Trabajador(models.Model):
 class Comentario(models.Model):
     texto = models.CharField(max_length=1000)
     trabajador = models.ForeignKey(Trabajador, null=True)
-    correo = models.CharField(max_length=1000)
+    correo = models.CharField(max_length=1000, null=True)
 
 
 class TrabajadorForm(ModelForm):

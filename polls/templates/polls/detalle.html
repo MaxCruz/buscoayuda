@@ -9,7 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
             integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
             crossorigin="anonymous"></script>
-    <script src="/designMatch/recursos/jquery.bootpag.min.js"></script>
+    <script src="https://raw.githubusercontent.com/botmonster/jquery-bootpag/master/lib/jquery.bootpag.min.js"></script>
     <script>
         var trabajador = localStorage.getItem('trabajador');
 
@@ -27,24 +27,24 @@
         })();
 
         mostrarComentarios();
-        function mostrarComentarios(){
+        function mostrarComentarios() {
             $.getJSON("/mostrarComentarios/" + trabajador).done(function (data) {
                 $.each(data, function (key, val) {
 
-                    var div='<div style="box-shadow: 2px 2px 5px gray; border-radius: 5px" class="col-md-6 col-md-offset-3">'+
-                                  '<h4>'+val.fields.correo+'</h4>'+
-                                  '<p>'+val.fields.texto+'</p></div>';
-                  $('#comentarios').append(div);
+                    var div = '<div style="box-shadow: 2px 2px 5px gray; border-radius: 5px" class="col-md-6 col-md-offset-3">' +
+                            '<h4>' + val.fields.correo + '</h4>' +
+                            '<p>' + val.fields.texto + '</p></div>';
+                    $('#comentarios').append(div);
                 })
             });
         }
 
 
-        function agregarComentario(){
-            $.post( "/addComment", { texto: $('#comentario').val(), trabajador: trabajador, correo: $('#correo').val() })
-              .done(function( data ) {
-                  mostrarComentarios();
-              });
+        function agregarComentario() {
+            $.post("/addComment", {texto: $('#comentario').val(), trabajador: trabajador, correo: $('#correo').val()})
+                    .done(function (data) {
+                        mostrarComentarios();
+                    });
         }
     </script>
 </head>
@@ -70,17 +70,17 @@
 </div>
 <div class="row">
     <div style="box-shadow: 2px 2px 5px gray; border-radius: 5px" class="col-md-6 col-md-offset-3">
-        <form onsubmit="agregarComentario()">
-         <input id="correo" style="margin: 5px;" type="email" required placeholder="Correo">
-         <textarea placeholder="Agreagar comentario" id="comentario" style="margin: 5px;" rows="3" cols="90" required></textarea>
-
-        <button type="submit" style="margin: 5px;" class="btn btn-default btn-success" title="Adicionar comentario">Comentar <span class="glyphicon glyphicon-plus"></span>
-        </button>
+        <form>
+            <input id="correo" style="margin: 5px;" type="email" required placeholder="Correo">
+            <textarea placeholder="Agreagar comentario" id="comentario" style="margin: 5px;" rows="3" cols="90"
+                      required></textarea>
+            <button style="margin: 5px;" class="btn btn-default btn-success" onclick="agregarComentario()" id="id_comentar">Comentar
+                <span class="glyphicon glyphicon-plus"></span>
+            </button>
         </form>
-
-     </div>
     </div>
-    <div id="comentarios" class="row">
+</div>
+<div id="comentarios" class="row">
 </div>
 </body>
 </html>
