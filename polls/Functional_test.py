@@ -109,23 +109,29 @@ class FunctionalTest(TestCase):
         self.browser.implicitly_wait(3)
 
         nombre = self.browser.find_element_by_id('id_nombre')
+        nombre.clear()
         nombre.send_keys('Max Raul')
 
         apellidos = self.browser.find_element_by_id('id_apellidos')
+        apellidos.clear()
         apellidos.send_keys('Cruz Rodriguez')
 
         experiencia = self.browser.find_element_by_id('id_aniosExperiencia')
+        experiencia.clear()
         experiencia.send_keys('6')
 
         self.browser.find_element_by_xpath("//select[@id='id_tiposDeServicio']/option[text()='Floristería']").click()
 
         telefono = self.browser.find_element_by_id('id_telefono')
+        telefono.clear()
         telefono.send_keys('3192829172')
 
         correo = self.browser.find_element_by_id('id_correo')
+        correo.clear()
         correo.send_keys('mr.cruz1@uniandes.edu.co')
 
         imagen = self.browser.find_element_by_id('id_imagen')
+        imagen.clear()
         imagen.send_keys('/Users/max/Downloads/profile2.png')
 
         botonGrabar = self.browser.find_element_by_id('id_grabar')
@@ -136,6 +142,6 @@ class FunctionalTest(TestCase):
         salir.click()
         self.browser.implicitly_wait(3)
 
-        span=self.browser.find_element(By.XPATH, '//span[text()="Max Raul"]')
+        span=self.browser.find_element(By.XPATH, '//span[text()="Max Raul Cruz Rodriguez"]')
 
-        self.assertIn('Max Raul Cruz', span.text)
+        self.assertIn('Max Raul Cruz Rodriguez', span.text)

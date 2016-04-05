@@ -4,6 +4,8 @@
     <list default="true" id="68e7854d-99f8-4c6e-807b-f840be7e4281" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polls/Functional_test.py" afterPath="$PROJECT_DIR$/polls/Functional_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polls/templates/polls/editar.html" afterPath="$PROJECT_DIR$/polls/templates/polls/editar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polls/templates/polls/index.html" afterPath="$PROJECT_DIR$/polls/templates/polls/index.html" />
     </list>
     <ignored path="buscoayuda4101.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,7 +21,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/buscoayuda4101$Unittests_in_Functional_test.coverage" NAME="Unittests in Functional_test Coverage Results" MODIFIED="1459828990455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/polls" />
     <SUITE FILE_PATH="coverage/buscoayuda4101$Unittest_FunctionalTest_test_loginIndependiente.coverage" NAME="Unittest FunctionalTest.test_loginIndependiente Coverage Results" MODIFIED="1459829383546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/polls" />
-    <SUITE FILE_PATH="coverage/buscoayuda4101$Unittest_FunctionalTest_test_editIndependiente.coverage" NAME="Unittest FunctionalTest.test_editIndependiente Coverage Results" MODIFIED="1459830182755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/polls" />
+    <SUITE FILE_PATH="coverage/buscoayuda4101$Unittest_FunctionalTest_test_editIndependiente.coverage" NAME="Unittest FunctionalTest.test_editIndependiente Coverage Results" MODIFIED="1459830781752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/polls" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -33,21 +35,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Functional_test.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Functional_test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/polls/Functional_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.8189655">
+              <caret line="146" column="46" selection-start-line="146" selection-start-column="46" selection-end-line="146" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editar.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="editar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/polls/templates/polls/editar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32553956">
-              <caret line="45" column="78" selection-start-line="45" selection-start-column="78" selection-end-line="45" selection-end-column="78" />
+            <state vertical-scroll-proportion="-11.916667">
+              <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -56,8 +58,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/polls/templates/polls/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5416665">
-              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+            <state vertical-scroll-proportion="-4.3333335">
+              <caret line="39" column="42" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -98,12 +100,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/polls/templates/polls/editar.html" />
         <option value="$PROJECT_DIR$/polls/views.py" />
         <option value="$PROJECT_DIR$/buscoayuda4101/settings.py" />
-        <option value="$PROJECT_DIR$/polls/templates/polls/index.html" />
         <option value="$PROJECT_DIR$/polls/templates/polls/registro.html" />
         <option value="$PROJECT_DIR$/polls/templates/polls/login.html" />
+        <option value="$PROJECT_DIR$/polls/templates/polls/editar.html" />
+        <option value="$PROJECT_DIR$/polls/templates/polls/index.html" />
         <option value="$PROJECT_DIR$/polls/Functional_test.py" />
       </list>
     </option>
@@ -624,11 +626,32 @@
       <option name="project" value="LOCAL" />
       <updated>1459829407831</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Paso 5 - Editar un independiente (Rojo)">
+      <created>1459830231878</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1459830231878</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="Unittest_FunctionalTest_test_editIndependiente - 2016.04.04 at 23h 23m 16s.xml">
+      <configuration name="Unittest FunctionalTest.test_editIndependiente" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_FunctionalTest_test_editIndependiente - 2016.04.04 at 23h 25m 07s.xml">
+      <configuration name="Unittest FunctionalTest.test_editIndependiente" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_FunctionalTest_test_editIndependiente - 2016.04.04 at 23h 29m 11s.xml">
+      <configuration name="Unittest FunctionalTest.test_editIndependiente" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_FunctionalTest_test_editIndependiente - 2016.04.04 at 23h 29m 35s.xml">
+      <configuration name="Unittest FunctionalTest.test_editIndependiente" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_FunctionalTest_test_editIndependiente - 2016.04.04 at 23h 31m 25s.xml">
+      <configuration name="Unittest FunctionalTest.test_editIndependiente" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_FunctionalTest_test_editIndependiente - 2016.04.04 at 23h 33m 14s.xml">
       <configuration name="Unittest FunctionalTest.test_editIndependiente" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittest_FunctionalTest_test_loginIndependiente - 2016.04.04 at 23h 05m 27s.xml">
@@ -642,21 +665,6 @@
     </history-entry>
     <history-entry file="Unittest_FunctionalTest_test_loginIndependiente - 2016.04.04 at 23h 09m 51s.xml">
       <configuration name="Unittest FunctionalTest.test_loginIndependiente" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Functional_test - 2016.04.04 at 22h 34m 39s.xml">
-      <configuration name="Unittests in Functional_test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Functional_test - 2016.04.04 at 22h 41m 36s.xml">
-      <configuration name="Unittests in Functional_test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Functional_test - 2016.04.04 at 22h 51m 03s.xml">
-      <configuration name="Unittests in Functional_test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Functional_test - 2016.04.04 at 23h 02m 27s.xml">
-      <configuration name="Unittests in Functional_test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Functional_test - 2016.04.04 at 23h 03m 38s.xml">
-      <configuration name="Unittests in Functional_test" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -704,7 +712,8 @@
     <MESSAGE value="Paso 3 - Detalle de un independiente (Verde)" />
     <MESSAGE value="Paso 4 - Login de un independiente (Rojo)" />
     <MESSAGE value="Paso 4 - Login de un independiente (Verde)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Paso 4 - Login de un independiente (Verde)" />
+    <MESSAGE value="Paso 5 - Editar un independiente (Rojo)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Paso 5 - Editar un independiente (Rojo)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -976,26 +985,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/editar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.916667">
+          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/polls/templates/polls/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5416665">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        <state vertical-scroll-proportion="-4.3333335">
+          <caret line="39" column="42" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/polls/Functional_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/templates/polls/editar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32553956">
-          <caret line="45" column="78" selection-start-line="45" selection-start-column="78" selection-end-line="45" selection-end-column="78" />
+        <state vertical-scroll-proportion="0.8189655">
+          <caret line="146" column="46" selection-start-line="146" selection-start-column="46" selection-end-line="146" selection-end-column="46" />
           <folding />
         </state>
       </provider>
