@@ -1,3 +1,4 @@
+# coding=utf-8
 from selenium.webdriver.common.by import By
 
 __author__ = 'Max'
@@ -51,8 +52,8 @@ class FunctionalTest(TestCase):
 
         botonGrabar = self.browser.find_element_by_id('id_grabar')
         botonGrabar.click()
-
         self.browser.implicitly_wait(3)
+
         span=self.browser.find_element(By.XPATH, '//span[text()="Max Cruz"]')
 
         self.assertIn('Max Cruz', span.text)
@@ -85,3 +86,56 @@ class FunctionalTest(TestCase):
 
         editarPerfil = self.browser.find_element_by_id('id_editar')
         self.assertIn('Editar', editarPerfil.text)
+
+    def test_editIndependiente(self):
+        self.browser.get('http://localhost:8000')
+
+        link = self.browser.find_element_by_id('id_login')
+        link.click()
+        self.browser.implicitly_wait(3)
+
+        usuario = self.browser.find_element_by_id('usrname')
+        usuario.send_keys('max_test')
+
+        clave = self.browser.find_element_by_id('psw')
+        clave.send_keys('clave123')
+
+        ingresar = self.browser.find_element_by_id('id_ingresar')
+        ingresar.click()
+        self.browser.implicitly_wait(3)
+
+        editarPerfil = self.browser.find_element_by_id('id_editar')
+        editarPerfil.click()
+        self.browser.implicitly_wait(3)
+
+        nombre = self.browser.find_element_by_id('id_nombre')
+        nombre.send_keys('Max Raul')
+
+        apellidos = self.browser.find_element_by_id('id_apellidos')
+        apellidos.send_keys('Cruz Rodriguez')
+
+        experiencia = self.browser.find_element_by_id('id_aniosExperiencia')
+        experiencia.send_keys('6')
+
+        self.browser.find_element_by_xpath("//select[@id='id_tiposDeServicio']/option[text()='Floristería']").click()
+
+        telefono = self.browser.find_element_by_id('id_telefono')
+        telefono.send_keys('3192829172')
+
+        correo = self.browser.find_element_by_id('id_correo')
+        correo.send_keys('mr.cruz1@uniandes.edu.co')
+
+        imagen = self.browser.find_element_by_id('id_imagen')
+        imagen.send_keys('/Users/max/Downloads/profile2.png')
+
+        botonGrabar = self.browser.find_element_by_id('id_grabar')
+        botonGrabar.click()
+        self.browser.implicitly_wait(3)
+
+        salir = self.browser.find_element_by_id('id_logout')
+        salir.click()
+        self.browser.implicitly_wait(3)
+
+        span=self.browser.find_element(By.XPATH, '//span[text()="Max Raul"]')
+
+        self.assertIn('Max Raul Cruz', span.text)
